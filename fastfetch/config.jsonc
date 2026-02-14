@@ -1,0 +1,158 @@
+// ~/.config/fastfetch/config.jsonc
+// See https://github.com/fastfetch-cli/fastfetch/wiki/Configuration for more details
+// See *.jsonc in https://github.com/fastfetch-cli/fastfetch/tree/dev/presets/examples for more examples
+{
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+	"logo": {
+		"source": "/home/eduardo/.config/fastfetch/image.png",
+		"type": "iterm",
+		"height": 15,
+        "width": 40,
+		"padding": {
+			"top": 8
+		}
+	},
+    "display": {
+        "separator": "  ",
+         "key": { "width": 18 }
+    },
+    "modules": [
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌────────────────────────────────────────────────────────────┐"
+        },
+        {
+            "type": "title",
+            "keyWidth": 10
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m└────────────────────────────────────────────────────────────┘"
+        },
+        {
+            "type": "custom",
+            "format": " \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[38m  \u001b[39m       \u001b[38m  \u001b[37m  \u001b[36m  \u001b[35m  \u001b[34m  \u001b[33m  \u001b[32m  \u001b[31m  \u001b[90m"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌────────────────────────────────────────────────────────────┐"
+        },
+        {
+            "type": "os",
+            "key": " OS",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "kernel",
+            "key": "│ ├ Kernel",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "packages",
+            "key": "│ ├󰏖 Packages",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "shell",
+            "key": "│ └ Shell",
+            "keyColor": "yellow",
+             "format": "{pretty-name}"
+        },
+        "break",
+        {
+            "type": "de",
+            "key": " DE",
+            "keyColor": "blue"
+        },
+        {
+            "type": "wm",
+            "key": "│ ├ WM",
+            "keyColor": "blue"
+        },
+        {
+            "type": "wmtheme",
+            "key": "│ ├󰉼 Theme",
+            "keyColor": "blue"
+        },
+        {
+            "type": "icons",
+            "key": "│ ├󰀻 Icons",
+            "keyColor": "blue"
+        },
+        {
+            "type": "terminal",
+            "key": "│ ├ Terminal",
+            "keyColor": "blue",
+            "format": "{pretty-name}"
+        },
+        {
+            "type": "font",
+            "key": "│ ├ Font",
+            "keyColor": "blue",
+            "format": "{combined}"
+        },
+        {
+            "type": "cursor",
+            "key": "│ ├󰇀 Cursor",
+            "keyColor": "blue",
+        },
+        "break",
+        {
+            "type": "host",
+            "key": " PC",
+            "keyColor": "green"
+        },
+        {
+            "type": "display",
+            "key": "│ └󰍹 Display",
+            "keyColor": "green"
+        },
+        {
+            "type": "cpu",
+            "key": "│ ├ CPU",
+            "keyColor": "green",
+            "format": "{name} ({cores-physical}C/{cores-logical}T) @ {freq-max}"
+        },
+        {
+            "type": "command",
+            "key": "│ ├󰢮 GPU",
+            "text": "$HOME/.config/fastfetch/scripts/gpu-intel.sh",
+            "keyColor": "green"
+        },
+        {
+            "type": "command",
+            "key": "│ ├󰢮 GPU",
+            "text": "$HOME/.config/fastfetch/scripts/gpu-nvidia.sh",
+            "keyColor": "green"
+        },
+        {
+            "type": "disk",
+            "key": "│ ├ Disk",
+            "keyColor": "green"
+        },
+        {
+            "type": "memory",
+            "key": "│ ├ RAM",
+            "keyColor": "green"
+        },
+        {
+            "type": "swap",
+            "key": "│ ├󰓡 SWAP",
+            "keyColor": "green"
+        },
+        {
+            "type": "uptime",
+            "key": "│ ├󰅐 Uptime",
+            "keyColor": "green"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m└────────────────────────────────────────────────────────────┘"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": " \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[38m  \u001b[39m       \u001b[38m  \u001b[37m  \u001b[36m  \u001b[35m  \u001b[34m  \u001b[33m  \u001b[32m  \u001b[31m  \u001b[90m"
+        }
+    ]
+}
