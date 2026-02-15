@@ -49,7 +49,7 @@ set -U pure_color_git_unpulled_commits (set_color brgreen)
 
 # prompt (lucid)
 
-set -g lucid_prompt_symbol_error_color red
+#set -g lucid_prompt_symbol_error_color red
 
 # Status Chars
 #set __fish_git_prompt_char_dirtystate '*'
@@ -74,6 +74,7 @@ set -g fish_pager_color_progress cyan
 string match -q "$TERM_PROGRAM" "vscode"
 and . (code --locate-shell-integration-path fish)
 
+set -gx fish_prompt_pwd_dir_length 0
 set -x GTK_USE_PORTAL 1
 
 alias cat='bat'
